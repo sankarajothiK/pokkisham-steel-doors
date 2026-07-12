@@ -69,7 +69,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         
         {/* Brand Logo */}
-        <Link to="/" className="flex items-center gap-3 group">
+        <Link to="/" onClick={() => setIsOpen(false)} className="flex items-center gap-3 group">
           <div className="w-10 h-10 rounded-full overflow-hidden border border-white/10 group-hover:border-brandGreen transition-colors flex items-center justify-center bg-white/5 backdrop-blur-sm">
             <img src="/logo.jpeg" alt="Pokkisham Logo" className="w-8 h-8 object-contain rounded-full" />
           </div>
@@ -240,6 +240,7 @@ export default function Navbar() {
                           <Link
                             key={cidx}
                             to={cat.path}
+                            onClick={() => setIsOpen(false)}
                             className="p-2 rounded-xl bg-white/5 font-poppins text-[11px] font-semibold text-gray-300"
                           >
                             {cat.name}
@@ -261,6 +262,7 @@ export default function Navbar() {
                           <Link
                             key={sidx}
                             to={sub.path}
+                            onClick={() => setIsOpen(false)}
                             className="flex items-center gap-2 p-2 rounded-xl bg-white/5 font-poppins text-[11px] font-semibold text-gray-300"
                           >
                             {sub.icon} {sub.label}
@@ -275,6 +277,7 @@ export default function Navbar() {
                   <Link
                     key={idx}
                     to={item.path}
+                    onClick={() => setIsOpen(false)}
                     className={`font-poppins text-sm font-semibold tracking-wide flex items-center gap-2 ${
                       isActive ? 'text-brandGreen' : 'text-gray-200'
                     }`}
@@ -286,6 +289,7 @@ export default function Navbar() {
 
               <Link
                 to="/contact"
+                onClick={() => setIsOpen(false)}
                 className="flex items-center justify-center gap-2 py-3 rounded-2xl bg-brandMagenta hover:bg-brandMagenta/90 text-white font-poppins text-xs font-bold"
               >
                 <PhoneCall className="w-4 h-4" /> Call Consultation
