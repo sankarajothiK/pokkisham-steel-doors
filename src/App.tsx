@@ -149,7 +149,7 @@ export default function App() {
         <Navbar />
 
         {/* Pages Content Routes */}
-        <main className="min-h-[70vh]">
+        <main className="min-h-[70vh] overflow-x-hidden">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

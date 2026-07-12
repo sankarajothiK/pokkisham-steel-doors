@@ -69,7 +69,7 @@ export default function DoorFinder() {
   const progressPercent = (step / totalSteps) * 100;
 
   return (
-    <div className="pt-24 pb-20 text-white min-h-screen relative flex items-center justify-center">
+    <div className="pt-24 pb-20 text-white min-h-screen relative flex items-center justify-center overflow-hidden">
       
       {/* Background elements */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-brandGreen/5 rounded-full blur-[100px] pointer-events-none" />

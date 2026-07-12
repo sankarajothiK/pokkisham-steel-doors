@@ -67,7 +67,7 @@ export default function Products() {
   };
 
   return (
-    <div className="pt-24 pb-20 text-white min-h-screen relative">
+    <div className="pt-24 pb-20 text-white min-h-screen relative overflow-hidden">
       
       {/* Background glow radial */}
       <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-brandGreen/5 rounded-full blur-[100px] pointer-events-none" />
