@@ -1,0 +1,15 @@
+{
+  "short_name": "Pokkisham",
+  "name": "Pokkisham Steel Doors",
+  "icons": [
+    {
+      "src": "logo.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#7FAF2C",
+  "background_color": "#FFFFFF"
+}
